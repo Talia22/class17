@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "../components/Navbar/Navbar";
 import { ReactNode } from "react";
+import Counter from '../components/Counter/Counter';
 
 export const metadata = {
   title: "Create Next App",
@@ -18,8 +19,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en">
       <body>
         <Navbar />
+        <Counter />
         {children}
       </body>
     </html>
   );
 }
+
+
